@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [
-    new Ingredient('Apples', 5),
-    new Ingredient('Tomatoes', 10)
+    new Ingredient('Apples', '5'),
+    new Ingredient('Tomatoes', '10')
   ];
 
   constructor() { }
@@ -17,5 +17,14 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+  // onListAdded(list: {name: string, amount: string}) {
+  //   this.ingredients.push({
+  //     name: list.name,
+  //     amount: list.amount
+  //   })
+  // }
+
+  onIngredientAdded(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
 }
