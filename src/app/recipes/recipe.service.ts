@@ -5,11 +5,8 @@ import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable()
 export class RecipeService {
-
   constructor(private shoppingListService: ShoppingListService) {}
-
-  recipeSelected = new EventEmitter<Recipe>();
-
+  
   private recipes: Recipe[] = [
     new Recipe(
       'A Test recipe', 
