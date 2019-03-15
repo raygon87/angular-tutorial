@@ -1,6 +1,6 @@
-import { AuthService } from './../auth/auth.service';
+import { AuthService } from './../../auth/auth.service';
 import { Component, OnInit } from '@angular/core';
-import { DataStorageService } from '../shared/data-storage.service';
+import { DataStorageService } from '../../shared/data-storage.service';
 import { Response } from '@angular/http';
 
 @Component({
@@ -30,5 +30,9 @@ export class HeaderComponent implements OnInit {
 
   onLogout() {
     this.authService.logout();
+  }
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
   }
 }
