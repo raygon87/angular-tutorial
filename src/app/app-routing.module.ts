@@ -7,8 +7,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'recipes', loadChildren: './recipes/recipes.module#RecipesModule' },
-  { path: 'shopping-list', component: ShoppingListComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: 'shopping-list', component: ShoppingListComponent }
 ]
 
 @NgModule({

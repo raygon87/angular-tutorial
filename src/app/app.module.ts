@@ -1,3 +1,4 @@
+import { PageNotFoundModule } from './not-found/page-not-found.module';
 import { CoreModule } from './core/core.module';
 import { FormsModule } from '@angular/forms';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
@@ -24,7 +25,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SharedModule,
     ShoppingListModule,
     AuthModule,
-    CoreModule
+    CoreModule,
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
